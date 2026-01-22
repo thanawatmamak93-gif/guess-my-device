@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess My Device</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<section id="page1" class="page active">
+  <div class="card">
+    <h1 class="title">Guess My Device</h1>
+    <h2 class="subtitle">เกมทายชื่ออุปกรณ์คอมพิวเตอร์</h2>
+
+    <button id="startGame" class="btn main">เริ่มเกม</button>
+
+    <div class="rule-box" style="color: #1d97cf;">
+      <p><strong>วิธีการเล่น:</strong></p>
+      <p>• ตอบคำถามทั้งหมด 30 ข้อ ภายในระยะเวลา 200วินาที</p>
+      <p>• เวลาจะเริ่มนับทันทีเมื่อผู้เล่นกดเริ่มเกม</p>
+      <p>• เลือกคำตอบที่ถูกต้องจากตัวเลือก 4 ข้อ</p>
+      <p>• คะแนนจะแสดงเมื่อหมดเวลาหรือจบเกม</p>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 2 -->
+<section id="page2" class="page">
+  <div class="card game-card">
+
+    <div class="top-bar">
+      <div id="timer">⏱ 200 วินาที</div>
+
+      <div class="menu">
+        <button id="menuBtn">⋮</button>
+        <div id="menuBox">
+          <button id="goHome">ย้อนกลับหน้าแรก</button>
+          <button id="endGame">จบเกม</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-area">
+      <p id="questionText"></p>
+      <div align="center"><img id="questionImage"></div>
+    </div>
+
+    <div class="choices">
+      <button class="choice"></button>
+      <button class="choice"></button>
+      <button class="choice"></button>
+      <button class="choice"></button>
+    </div>
+
+  </div>
+</section>
+
+<!-- PAGE 3 -->
+<section id="page3" class="page">
+  <div class="card result-card">
+    <h1 class="title">Guess My Device</h1>
+
+    <div class="result">
+      <div class="score correct">
+        <h2 id="correctScore">0</h2>
+        <p>ข้อถูก</p>
+      </div>
+      <div class="score wrong">
+        <h2 id="wrongScore">0</h2>
+        <p>ข้อผิด</p>
+      </div>
+    </div>
+
+    <div class="graph">
+      <div id="barCorrect"></div>
+      <div id="barWrong"></div>
+    </div>
+
+    <button id="restart" class="btn main">เล่นอีกครั้ง</button>
+  </div>
+</section>
+
+<script src="script.js">
+</script>
+</body>
+</html>
